@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Sitio Web</title>
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --border-color: #ccc;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: var(--primary-color);
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="url"], input[type="tel"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .checkbox-group, .radio-group {
+            margin-bottom: 10px;
+        }
+        .checkbox-group label, .radio-group label {
+            font-weight: normal;
+            display: inline-block;
+            margin-right: 15px;
+        }
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #357abd;
+        }
+        .hidden {
+            display: none;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Solicitud de Sitio Web para tu Negocio</h1>
+    <p>Completa este formulario para crear el sitio web de tu negocio. Con esta información podremos generar tu página con menú, precios, redes sociales y contacto.</p>
+
+    <form action="https://formsubmit.co/oroman@gmail.com" method="POST" enctype="multipart/form-data">
+        
+        <input type="hidden" name="_subject" value="¡Nueva solicitud de sitio web!">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <h2>🧾 Sección 1 — Información General</h2>
+        
+        <div class="form-group">
+            <label for="nombre_negocio">1. Nombre del negocio *</label>
+            <input type="text" id="nombre_negocio" name="Nombre_del_negocio" required>
+        </div>
+
+        <div class="form-group">
+            <label for="responsable">2. Nombre del dueño o responsable *</label>
+            <input type="text" id="responsable" name="Responsable" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">3. Email de contacto *</label>
+            <input type="email" id="email" name="Email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="telefono">4. Teléfono o WhatsApp *</label>
+            <input type="tel" id="telefono" name="Telefono" required>
+        </div>
+
+        <div class="form-group">
+            <label for="direccion">5. Dirección del negocio</label>
+            <input type="text" id="direccion" name="Direccion">
+        </div>
+
+        <div class="form-group">
+            <label for="ciudad">6. Ciudad y país</label>
+            <input type="text" id="ciudad" name="Ciudad_y_Pais">
+        </div>
+
+        <div class="form-group">
+            <label for="horario">7. Horario de atención</label>
+            <span class="note">Ejemplo: Lunes a viernes 8:00 a 18:00</span>
+            <input type="text" id="horario" name="Horario">
+        </div>
+
+        <h2>🧾 Sección 2 — Detalles del Negocio</h2>
+
+        <div class="form-group">
+            <label for="tipo_negocio">8. Tipo de negocio *</label>
+            <select id="tipo_negocio" name="Tipo_de_negocio" required>
+                <option value="">Selecciona una opción...</option>
+                <option value="Cafetería">Cafetería</option>
+                <option value="Restaurante">Restaurante</option>
+                <option value="Tienda">Tienda</option>
+                <option value="Peluquería">Peluquería</option>
+                <option value="Gimnasio">Gimnasio</option>
+                <option value="Consultorio">Consultorio</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="descripcion">9. Describe tu negocio en una o dos frases</label>
+            <textarea id="descripcion" name="Descripcion"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="unico">10. ¿Qué hace único a tu negocio?</label>
+            <textarea id="unico" name="Diferenciador"></textarea>
+        </div>
+
+        <h2>🧾 Sección 3 — Productos o Menú</h2>
+
+        <div class="form-group">
+            <label for="productos">11. Lista tus productos principales y precios</label>
+            <span class="note">Ejemplo: Café Latte - $3 | Capuccino - $3.5</span>
+            <textarea id="productos" name="Productos_y_Precios"></textarea>
+        </div>
+
+        <h2>🧾 Sección 4 — Redes Sociales</h2>
+
+        <div class="form-group">
+            <label for="instagram">12. Link de Instagram</label>
+            <input type="url" id="instagram" name="Instagram">
+        </div>
+
+        <div class="form-group">
+            <label for="facebook">13. Link de Facebook</label>
+            <input type="url" id="facebook" name="Facebook">
+        </div>
+
+        <div class="form-group">
+            <label for="tiktok">14. Link de TikTok</label>
+            <input type="url" id="tiktok" name="TikTok">
+        </div>
+
+        <div class="form-group">
+            <label for="maps">15. Link de Google Maps</label>
+            <input type="url" id="maps" name="Google_Maps">
+        </div>
+
+        <h2>🧾 Sección 5 — Imágenes del Negocio</h2>
+        <span class="note">Nota: Al subir múltiples archivos, estos se adjuntarán en el correo.</span>
+
+        <div class="form-group">
+            <label for="logo">16. Sube tu logo (JPG/PNG)</label>
+            <input type="file" id="logo" name="Logo" accept=".jpg, .jpeg, .png">
+        </div>
+
+        <div class="form-group">
+            <label for="fotos">17. Sube fotos del negocio o productos (Máx. 10)</label>
+            <input type="file" id="fotos" name="Fotos_Negocio" accept=".jpg, .jpeg, .png" multiple>
+        </div>
+
+        <h2>🧾 Sección 6 — Estilo del Sitio</h2>
+
+        <div class="form-group">
+            <label for="estilo">18. ¿Qué estilo prefieres para tu sitio web?</label>
+            <select id="estilo" name="Estilo_Visual">
+                <option value="">Selecciona una opción...</option>
+                <option value="Minimalista">Minimalista</option>
+                <option value="Moderno">Moderno</option>
+                <option value="Elegante">Elegante</option>
+                <option value="Artesanal / cálido">Artesanal / cálido</option>
+                <option value="Sin preferencia">No tengo preferencia</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="colores">19. Colores del negocio (opcional)</label>
+            <input type="text" id="colores" name="Colores">
+        </div>
+
+        <h2>🧾 Sección 7 — Funciones del Sitio</h2>
+
+        <div class="form-group">
+            <label>20. ¿Qué quieres que tenga tu sitio web?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="f_menu" name="Funciones[]" value="Mostrar menú"> <label for="f_menu">Mostrar menú o productos</label><br>
+                <input type="checkbox" id="f_precios" name="Funciones[]" value="Mostrar precios"> <label for="f_precios">Mostrar precios</label><br>
+                <input type="checkbox" id="f_galeria" name="Funciones[]" value="Galería de imágenes"> <label for="f_galeria">Galería de imágenes</label><br>
+                <input type="checkbox" id="f_wp" name="Funciones[]" value="Botón de WhatsApp"> <label for="f_wp">Botón de WhatsApp</label><br>
+                <input type="checkbox" id="f_contacto" name="Funciones[]" value="Formulario de contacto"> <label for="f_contacto">Formulario de contacto</label><br>
+                <input type="checkbox" id="f_redes" name="Funciones[]" value="Mostrar redes sociales"> <label for="f_redes">Mostrar redes sociales</label><br>
+                <input type="checkbox" id="f_mapa" name="Funciones[]" value="Mapa del negocio"> <label for="f_mapa">Mapa del negocio</label>
+            </div>
+        </div>
+
+        <h2>🧾 Sección 8 — Integración de Contacto</h2>
+
+        <div class="form-group">
+            <label>21. ¿Deseas que los clientes puedan contactarte por WhatsApp desde el sitio?</label>
+            <div class="radio-group">
+                <input type="radio" id="wp_si" name="Quiere_WhatsApp" value="Sí" onchange="toggleWhatsAppInput(true)"> <label for="wp_si">Sí</label>
+                <input type="radio" id="wp_no" name="Quiere_WhatsApp" value="No" onchange="toggleWhatsAppInput(false)" checked> <label for="wp_no">No</label>
+            </div>
+        </div>
+
+        <div class="form-group hidden" id="whatsapp_number_container">
+            <label for="numero_wp">Número de WhatsApp (con código de área)</label>
+            <input type="tel" id="numero_wp" name="Numero_WhatsApp_Web">
+        </div>
+
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+</div>
+
+<script>
+    // Función para mostrar/ocultar el campo del número de WhatsApp
+    function toggleWhatsAppInput(show) {
+        const container = document.getElementById('whatsapp_number_container');
+        const input = document.getElementById('numero_wp');
+        if (show) {
+            container.classList.remove('hidden');
+            input.setAttribute('required', 'required');
+        } else {
+            container.classList.add('hidden');
+            input.removeAttribute('required');
+            input.value = ''; // Limpiar el valor si selecciona "No"
+        }
+    }
+</script>
+
+</body>
+</html>
